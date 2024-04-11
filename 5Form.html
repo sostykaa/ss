@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <label for="a">Enter First Name</label>
+        <input type="text" name="fname" id="a">
+        <br> <br>
+        <label for="b">Enter Last Name</label>
+        <input type="text" name="lname" id="b">
+        <br><br>
+        <label for="c">Enter Age</label>
+        <input type="number" name="age" min="0" max="80" id="c">
+        <br> <br>
+        <label for="d">Enter The Email Address</label>
+        <input type="email" name="email" id="d">
+        <br><br>
+        <label for="e">Enter Your Password</label>
+        <input type="Password" name="pswrd" id="e">
+        <hr>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <h2>Form Day 2</h2>
+    <form>
+        <fieldset>
+            <legend>Form</legend>
+            <label for="g">Enter First Name</label>
+            <input type="text" name="fname" id="g">
+            <br> <br>
+            <label for="h">Enter Last Name</label>
+            <input type="text" name="lname" id="h">
+            <br><br>
+            Select Gender:
+            <input type="radio" name="Gender" id="M" value="male"><label for="M">Male</label>
+            <input type="radio" name="Gender" id="F" value="female"><label for="F">Female</label>
+            <input type="radio" name="Gender" id="O" value="others"><label for="O">Others</label>
+            <br><br>
+            Select Courses you want to study:<br>
+            <input type="checkbox" name="course" id="i" value="Web"><label for="i">Web Design</label><br>
+            <input type="checkbox" name="course" id="j" value="mern"><label for="j">Mern Stack</label><br>
+            <input type="checkbox" name="course" id="k" value="seo"><label for="k">SEO</label><br>
+            <input type="checkbox" name="course" id="l" value="ui"><label for="l">UI/UX</label><br>
+            <input type="checkbox" name="course" id="n" value="cpr"><label for="n">C-Programming</label><br>
+            <br>
+            <label for="con">Select Your Country:</label><input type="text" name="country" id="con" list="co"><br>
+            <datalist id="co">
+                <option value="Nepal"></option>
+                <option value="India"></option>
+                <option value="China"></option>
+                <option value="America"></option>
+                <option value="Canada"></option>
+                <option value="Australia"></option>
+            </datalist>
+            <br>
+            <label for="da">Date:</label>
+            <input type="date" name="date" id="da">
+            <br><br>
+            <label for="ti">Time:</label>
+            <input type="time" name="time" id="ti">
+            <br><br>
+            <label for="dom">Domain:</label>
+            <input type="url" name="url" id="dom">
+            <br><br>
+            <label for="pri">Price Range:</label>
+            <input type="range" name="price" id="pri">
+            <br><br>
+            <label for="msg">Leave Your Message Here:</label>
+            <textarea type="message" name="message" id="msg" rows="20" cols="40"></textarea>
+            <br><br>
+            <label for="yer">Years:</label> <select name="years" id="yer">
+                <script>
+                    for(var a=2000; a<=2080; a++)
+                    {
+                        document.write("<option>"+ a + "<option>")
+                    }
+                </script>
+            </select>
+            
+            
+            <hr><button>Submit</button>
+
+        </fieldset>
+
+    </form>
+</body>
+</html>

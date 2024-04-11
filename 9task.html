@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" cellspacing="2">
+        <form>
+            <tr>
+                <th>Name</th>
+                <th>Value</th>                
+            </tr>
+            <tr>
+                <td><label for="na">Name</label></td>
+                <td><input type="text" name="fullname" id="na"></td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td><input type="radio" name="gender" id="ma" value="male">
+                    <label for="ma">Male</label><br>
+                    <input type="radio" name="gender" id="fe" value="female">
+                    <label for="fe">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="eye">Eye color</label></td>
+                <td>
+                    <select name="color" id="eye">
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Brown">Brown</option>
+                    </select>                    
+                </td>
+            </tr>
+            <tr>
+                <td>Check all that apply</td>
+                <td><input type="checkbox" name="check" id="height" value="6 feet">
+                    <label for="height">Over 6 feet tall</label><br>
+                    <input type="checkbox" name="check" id="weight" value="200 p">
+                    <label for="weight">Over 200 pounds</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"> <label for="msg">Describe your athletic ability:<br></label>
+                    <textarea type="message" name="message" id="msg" rows="5px" cols="38px">                        
+                    </textarea>                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button>Enter my information</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
